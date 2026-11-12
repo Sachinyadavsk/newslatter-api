@@ -1,0 +1,37 @@
+{
+  "name": "newslatter",
+  "version": "1.0.0",
+  "description": "newslatter multiple blog",
+  "license": "ISC",
+  "author": "sachin kumar ram",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js",
+    "start": "node index.js",
+    "seed": "node seeders/seed.js all",
+    "seed:categories": "node seeders/seed.js categories",
+    "seed:users": "node seeders/seed.js users",
+    "seed:news": "node seeders/seed.js news"
+  },
+  "dependencies": {
+    "axios": "^1.21.1",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.10",
+    "express": "^5.3.0",
+    "express-rate-limit": "^8.7.4",
+    "express-validator": "^7.3.2",
+    "helmet": "^8.3.0",
+    "jsonwebtoken": "^9.0.3",
+    "morgan": "^1.12.1",
+    "multer": "^2.5.0",
+    "mysql2": "^3.24.6",
+    "nodemailer": "^10.5.0",
+    "slugify": "^1.6.9"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
